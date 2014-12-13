@@ -1,0 +1,46 @@
+{% if site.social_service_links %}
+<div id="social-links">
+  <ul>
+    {% if site.googleplus_user %}
+    <li>
+      <a class="googleplus" title="google plus" href="http://plus.google.com/+{{ site.googleplus_user }}">
+        <i class="icon-gplus"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.twitter_user %}
+    <li>
+      <a class="twitter" title="twitter" href="http://twitter.com/{{ site.twitter_user }}">
+        <i class="icon-twitter"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.tumblr_user %}
+    <li>
+      <a class="tumblr" title="tumblr" href="http://{{ site.tumblr_user }}.tumblr.com/">
+        <i class="icon-tumblr"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.github_user %}
+    <li>
+      <a class="github" title="github" href="https://github.com/{{ site.github_user }}">
+        <i class="icon-github"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.weibo_user %}
+    <li>
+      <a class="weibo" href="http://weibo.com/{{ site.weibo_user }}">
+        <i class="icon-weibo"></i>
+      </a>
+    </li>
+    {% endif %}
+    <li>
+      <a class="feed" title="feed" href="/atom.xml">
+        <i class="icon-rss"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+{% endif %}
